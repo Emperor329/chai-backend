@@ -6,7 +6,7 @@ const storage = multer.diskStorage({
     },
     filename: function (req, file, cb) {
     //   const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9)
-    console.log(file);
+    console.log(file); // it only gets executed when images and files are uploaded
       cb(null, file.originalname)
     }
   })
